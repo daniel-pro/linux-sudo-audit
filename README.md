@@ -50,10 +50,3 @@ Now create all nominal users and assign ```sysadmin``` group to permit the user 
 #### Security Concerns
 * Using CmndAlias ALL will never be safe. Blacklists can easily be overcome
 * Whitelists are more secure than Blacklists
-
-
-License
-----
-
-Apache 2
-
