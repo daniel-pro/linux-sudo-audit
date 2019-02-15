@@ -6,7 +6,7 @@ This document shows how to configure ``` sudo ``` with the only purpose of audit
 
 # Real Life Scenario
  Two teams (DBA and SA) need access to Proof of Concept systems where they will carry out their own installation and configuration activities.
- Every single team member will have his/her own nominal user on the systems and will be allowed to run commands, that will be logged, using privileged users - let's say ``` oracle```  or ``` mysql``` users for the DBA team and ```root``` for the SA team.
+ Every single team member will have his/her own nominal user on the systems and will be allowed to run commands, that will be logged, using privileged users - let's say ``` oracle```  or ``` mysql``` for the DBA team and ```root``` for the SA team.
  
 
 
