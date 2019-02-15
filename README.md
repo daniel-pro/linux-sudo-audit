@@ -21,7 +21,7 @@ Edit sudo configuration :
 ```sh
 # visudo
 ```
-Comment out the Runas_Spec regarding wheel group if present, as we don't want anyone in wheel group to be able to run any commands:
+Comment out the Runas_Spec regarding ```wheel``` group if present, as we don't want anyone in wheel group to be able to run any commands:
 ```sh
 ## Allows people in group wheel to run all commands
 # %wheel  ALL=(ALL)       ALL
@@ -34,7 +34,7 @@ Cmnd_Alias DANGEROUS_COMMANDS = /bin/passwd, /sbin/visudo, /bin/su, /bin/vi /etc
 %sysadmin  ALL=(root:ALL)   ALL, !DANGEROUS_COMMANDS
 ```
 The first line defines a command alias which contains all potentially dangerous commands that won't be permitted via sudo.
-The second and third lines allow ```dbadmin``` group members to run any commands as ```oracle``` and/or ```mysql``` user.
+The second and third lines allow ```dbadmin``` group members to run any commands as ```oracle``` and/or ```mysql```.
 The last line allows ```sysadmin``` group members to run any commands as root with the exception of the ```DANGEROUS_COMMANDS``` that might be used to overcome the sudo auditing configuration.
 
 Save the configuration and exit from ```visudo```
